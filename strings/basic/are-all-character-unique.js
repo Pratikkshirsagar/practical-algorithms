@@ -17,6 +17,6 @@ function areAllCharactersUnique(str) {
   return true;
 }
 
-const result = areAllCharactersUnique('abcdefg');
+const result = areAllCharactersUnique('abcdefgg');
 
 console.log(result);

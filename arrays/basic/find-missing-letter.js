@@ -5,11 +5,11 @@
 
 function findMissingLetter(arr) {
   const alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  const startingIndex = alphabet.indexOf(arr[0]);
+  const startChar = alphabet.indexOf(arr[0]);
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== alphabet[startingIndex + i]) {
-      return alphabet[startingIndex + i];
+    if (arr[i] !== alphabet[startChar + i]) {
+      return alphabet[startChar + i];
     }
   }
 

@@ -5,20 +5,21 @@
 // findMissingNumber([1, 2, 3, 4, 6, 7, 8, 9, 10]); // 5
 
 function findMissingNumber(arr) {
-  const sortedArr = arr.sort((a, b) => a - b);
-  let missingNum;
+  const srotedArr = arr.sort((a, b) => a - b);
 
-  for (let i = 0; i < sortedArr.length; i++) {
-    let secondEl = sortedArr[i + 1];
-    const expectedNumber = sortedArr[i] + 1;
+  let missingNumber;
 
-    if (secondEl !== expectedNumber) {
-      missingNum = expectedNumber;
+  for (let i = 0; i < srotedArr.length; i++) {
+    const nextNumber = srotedArr[i + 1];
+    const expectedNumber = srotedArr[i] + 1;
+
+    if (nextNumber !== expectedNumber) {
+      missingNumber = expectedNumber;
       break;
     }
   }
 
-  return missingNum;
+  return missingNumber;
 }
 
 const result = findMissingNumber([10, 5, 1, 2, 4, 6, 8, 3, 9]);
